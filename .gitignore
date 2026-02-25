@@ -1,0 +1,51 @@
+# Python caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+.conda/
+
+seen_ads*.txt
+
+# Environment secrets
+.env
+.env.*
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Never publish data artifacts
+**/data/**
+**/csv/**
+**/final_data/**
+**/*.csv
+**/*.tsv
+**/*.xlsx
+**/*.xls
+**/*.parquet
+**/*.feather
+**/*.pkl
+**/*.json
+**/*.html
+**/*.sqlite
+**/*.db
+
+# Keep code, ignore notebooks by default (can be force-added after sanitization)
+*.ipynb
+
+# Logs and temp
+*.log
+*.tmp
+*.bak

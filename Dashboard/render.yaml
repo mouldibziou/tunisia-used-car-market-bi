@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: tunisia-car-dashboard
+    env: python
+    region: frankfurt  # or oregon, singapore
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn run:server
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.0
