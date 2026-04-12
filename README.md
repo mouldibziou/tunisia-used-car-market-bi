@@ -13,7 +13,7 @@ Tunisia's used car market is large, fragmented, and poorly documented. Listings 
 1. **Collect** raw listings data from three distinct online sources
 2. **Standardise and clean** heterogeneous, noisy data without discarding it through ML-based imputation
 3. **Analyse** pricing dynamics, consumer behaviour, and economic signals embedded in the market
-4. **Visualise** findings across three complementary formats — a self-contained Jupyter notebook analysis, an interactive Power BI report, and a deployed Plotly Dash web application — so that buyers, sellers, and analysts can explore the data themselves at different levels of depth
+4. **Visualise** findings across three complementary formats — a self-contained Jupyter notebook analysis, an interactive Power BI report, and a Plotly Dash web application — so that buyers, sellers, and analysts can explore the data themselves at different levels of depth
 
 The result is a pipeline that turns unstructured web listings into a structured, analysis-ready dataset surfaced through three distinct visualization layers.
 
@@ -60,7 +60,7 @@ The result is a pipeline that turns unstructured web listings into a structured,
 │                                                                 │
 │  📓 Jupyter Notebook  — inline charts, narrative, full code     │
 │  📊 Power BI Report   — executive dashboard, dynamic slicers    │
-│  🌐 Plotly Dash App   — deployed web app, brand/model explorer  │
+│  🌐 Plotly Dash App   — web app, brand/model explorer  │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
