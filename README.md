@@ -1,8 +1,10 @@
+![Tunisia Used Car Market — End-to-End Data Science Project](ChatGPT%20Image%20Apr%2012%2C%202026%20at%2004_20_57%20PM.png)
+
 # Tunisia Used Car Market — End-to-End Data Science Project
 
 **Author:** Mohamed Mouldi Bziou  
 **Timeline:** 2025 – 2026  
-**Status:** Active — forecasting module planned (see [Future Releases](#future-releases))
+**Status:** Active
 
 ---
 
@@ -265,28 +267,3 @@ data_collection/   →   data_wrangling/   →   EDA/   →   Data Analysis/   �
 
 ---
 
-## Future Releases
-
-### Time Series Forecasting Module
-
-The `historical_data.csv` dataset spans **2007–2024** (~4,500 records), providing 17 years of used car pricing data. The next major release will add a dedicated time series analysis and forecasting stage:
-
-**Planned analyses:**
-- **Price trend decomposition** — separating trend, seasonality, and residual components using `statsmodels` STL decomposition
-- **Seasonal pattern quantification** — confirming and modelling the June/December price spikes and Q3 peak already observed in EDA
-- **Brand-level forecasting** — per-brand price forecasts using ARIMA/SARIMA, allowing buyers to time purchases
-- **Volatility modelling** — GARCH models on price series to measure market uncertainty across segments
-- **Regime change detection** — identifying structural breaks (e.g., the 2021 COVID supply shock) using Chow test or PELT (Pruned Exact Linear Time)
-
-**Planned models:**
-
-| Model | Use Case |
-|-------|---------|
-| SARIMA / SARIMAX | Univariate price forecasting with seasonality |
-| Prophet (Meta) | Trend + holiday-aware forecasting with uncertainty intervals |
-| LSTM (PyTorch/Keras) | Deep learning approach for non-linear price patterns |
-| XGBoost (time features) | Gradient boosting with lag features and rolling statistics |
-
-**Target output:** A forecasting notebook (`Data Analysis/forecasting.ipynb`) + a new dashboard tab showing 12-month price projections per brand/model with confidence intervals.
-
-**Data requirement:** The existing `historical_data.csv` is sufficient as a base; augmentation with quarterly macroeconomic indicators (TND/EUR exchange rate, fuel price index, import volume) is planned to improve SARIMAX exogenous regressors.
