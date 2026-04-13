@@ -3,7 +3,7 @@
 # Tunisia Used Car Market — End-to-End Data Science Project
 
 **Author:** Mohamed Mouldi Bziou  
-**Timeline:** 2025 – 2026  
+**Timeline:** 2025
 **Status:** Active
 
 ---
